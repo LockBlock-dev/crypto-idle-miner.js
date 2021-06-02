@@ -1,0 +1,31 @@
+{
+    "accessToken": "",
+    "divisionId": 0,
+    "email": "",
+    "emailVerified": false,
+    "id": "",
+    "imageId": 0,
+    "leagueId": 0,
+    "level": 0,
+    "mailingList": false,
+    "name": "",
+    "optIns": [],
+    "rank": 0,
+    "referralId": "",
+    "referralLink": "",
+    "referralPoints": {
+        "prevMonth": 0.0,
+        "thisMonth": 0.0,
+        "total": 0.0
+    },
+    "tokens": 0.0,
+    "withdraw": {
+        "address": "",
+        "amount": 0.0,
+        "infoUrl": "",
+        "method": "",
+        "status": "",
+        "time": ""
+    },
+    "xp": 0
+}
