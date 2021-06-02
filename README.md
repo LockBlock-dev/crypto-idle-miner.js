@@ -59,7 +59,7 @@ This will runs a tiny tool in your console to help you get your account token.
 ```js
 const { Client } = require("./index.js")
 
-const client = new Client(process.env.TOKEN)
+const client = new Client("token")
 
 client.user.then(data => {
     console.log(data)
