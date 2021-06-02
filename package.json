@@ -1,9 +1,26 @@
 {
+  "name": "crypto-idle-miner.js",
+  "version": "1.0.0",
+  "description": "A JavaScript library for interacting with the Crypto Idle Miner API",
+  "main": "index.js",
   "dependencies": {
     "axios": "^0.21.1",
     "chalk": "^4.1.1",
     "readline-sync": "^1.4.10"
   },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LockBlock-dev/crypto-idle-miner.js.git"
+  },
+  "author": "LockBlock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LockBlock-dev/crypto-idle-miner.js/issues"
+  },
+  "homepage": "https://github.com/LockBlock-dev/crypto-idle-miner.js#readme",
   "devDependencies": {
     "dotenv": "^10.0.0"
   }
