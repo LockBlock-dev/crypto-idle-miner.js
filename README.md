@@ -20,6 +20,7 @@ crypto-idle-miner.js is a Node.js module that allows you to easily interact with
 • Download [NPM](https://www.npmjs.com/get-npm) and [NodeJS](https://nodejs.org)
 
 With GitHub :
+
 • Download the project or clone it
 
 • Go to the crypto-idle-miner.js folder and do `npm install`
@@ -27,6 +28,7 @@ With GitHub :
 • Require the [index.js](/index.js)
 
 With NPM :
+
 • Download the project
 
 • Do `npm install crypto-idle-miner.js`
