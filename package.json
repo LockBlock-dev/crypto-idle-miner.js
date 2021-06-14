@@ -1,6 +1,6 @@
 {
   "name": "crypto-idle-miner.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript library for interacting with the Crypto Idle Miner API",
   "main": "index.js",
   "dependencies": {
