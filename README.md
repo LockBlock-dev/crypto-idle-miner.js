@@ -57,7 +57,7 @@ This will runs a tiny tool in your console to help you get your account token.
 ### Using the library
 
 ```js
-const { Client } = require("./index.js")
+const { Client } = require("crypto-idle-miner.js")
 
 const client = new Client("token")
 
