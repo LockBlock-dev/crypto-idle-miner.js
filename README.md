@@ -46,7 +46,7 @@ See the [API documentation](/API.md) for list of methods and properties.
 ### How to get your token
 
 ```js
-const { Client } = require("./index.js")
+const { Client } = require("crypto-idle-miner.js")
 
 const client = new Client()
 
