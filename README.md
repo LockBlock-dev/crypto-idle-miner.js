@@ -1,8 +1,8 @@
 # Crypto Idle Miner.js
 
-Made with [![axios](https://img.shields.io/github/package-json/dependency-version/LockBlock-dev/crypto-idle-miner.js/axios)](https://www.npmjs.com/package/axios)
+[![axios](https://img.shields.io/github/package-json/dependency-version/LockBlock-dev/crypto-idle-miner.js/axios)](https://www.npmjs.com/package/axios)
 
-[![GitHub stars](https://img.shields.io/github/stars/LockBlock-dev/crypto-idle-miner.js.svg)](https://github.com/LockBlock-dev/crypto-idle-miner.js/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/LockBlock-dev/crypto-idle-miner.js.svg)](https://github.com/LockBlock-dev/crypto-idle-miner.js/stargazers) ![npm](https://img.shields.io/npm/dm/crypto-idle-miner.js)
 
 crypto-idle-miner.js is a Node.js module that allows you to easily interact with the Hora Games API.
 
