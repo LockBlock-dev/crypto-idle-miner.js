@@ -89,14 +89,14 @@ exports.Client = class Client {
     * @return {Object} empty user data
     */
     get emptyData() {
-      return require("../data/emptyData.json")
+      return require("../emptyData.json")
     }
 
     /**
     * Get user achievements.
     * @return {Promise} promise
     */
-    get achievements() {
+    achievements() {
       return this.#request("GET", "configs/achievements")
     }
 
@@ -104,7 +104,7 @@ exports.Client = class Client {
     * Get leagues list.
     * @return {Promise} promise
     */
-    get leagues() {
+    leagues() {
       return this.#request("GET", "leaderboard")
     }
 
@@ -133,7 +133,7 @@ exports.Client = class Client {
     * Get game common info.
     * @return {Promise} promise
     */
-    get common() {
+    common() {
       return this.#request("GET", "configs/common")
     }
 
@@ -151,7 +151,7 @@ exports.Client = class Client {
     * Get user referrals.
     * @return {Promise} promise
     */
-    get referrals() {
+    referrals() {
       return this.#request("GET", "users/referrals")
     }
 
@@ -169,7 +169,7 @@ exports.Client = class Client {
     * Get user daily Rewards list.
     * @return {Promise} promise
     */
-    get dailyRewards() {
+    dailyRewards() {
       return this.#request("GET", "configs/dailyRewards")
     }
 
@@ -177,7 +177,7 @@ exports.Client = class Client {
     * Get gameCharacters list.
     * @return {Promise} promise
     */
-    get gameCharacters() {
+    gameCharacters() {
       return this.#request("GET", "configs/gameCharacters")
     }
 
@@ -185,7 +185,7 @@ exports.Client = class Client {
     * Get researches list.
     * @return {Promise} promise
     */
-    get researches() {
+    researches() {
       return this.#request("GET", "configs/researchLab")
     }
 
@@ -193,7 +193,7 @@ exports.Client = class Client {
     * Get user info.
     * @return {Promise} promise
     */
-    get user() {
+    user() {
       return this.#request("GET", "users")
     }
 
@@ -201,7 +201,7 @@ exports.Client = class Client {
     * Get user leaderboard.
     * @return {Promise} promise
     */
-    get userLeaderboard() {
+    userLeaderboard() {
       return this.#request("GET", "leaderboard/user")
     }
 

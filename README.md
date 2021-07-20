@@ -61,14 +61,14 @@ const { Client } = require("crypto-idle-miner.js")
 
 const client = new Client("token")
 
-client.user.then(data => {
+client.user().then(data => {
     console.log(data)
 })
 
 //OR
 
 const myFunc = async () => {
-    const data = await client.user
+    const data = await client.user()
     console.log(data)
 }
 

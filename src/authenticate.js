@@ -1,5 +1,4 @@
 const axios = require('axios').default
-const chalk = require("chalk")
 const readlineSync = require("readline-sync")
 
 const request = (path, data) => {
@@ -28,15 +27,15 @@ const request = (path, data) => {
 }
 
 const getEmail = () => {
-  return readlineSync.question(`Input your in-game ${chalk.blue("email")}: `)
+  return readlineSync.question(`Input your in-game email: `)
 }
 
 const getCode = () => {
-  return readlineSync.question(`Input the ${chalk.blue("code")} you received by email (it lasts only 5 minutes!): `)
+  return readlineSync.question(`Input the code you received by email (it lasts only 5 minutes!): `)
 }
 
 const authenticate = async () => {
-  console.log(`Welcome to the ${chalk.blue("Authentication")} tool of this library.\nNote that this tool ${chalk.blue("does not share any information")} with any service other than the Hora API.\nThis tool is here to help you get your account token. You just need to follow the steps below:\n   1. Input your in-game ${chalk.blue("email")}\n   2. Input the ${chalk.blue("code")} you received\n   3. Save your ${chalk.blue("token")}\n`)
+  console.log(`Welcome to the Authentication tool of this library.\nNote that this tool does not share any information with any service other than the Hora API.\nThis tool is here to help you get your account token. You just need to follow the steps below:\n   1. Input your in-game email\n   2. Input the code you received\n   3. Save your token\n`)
   const email = getEmail()
   await request("users/passCode", {"email":email})
   const code = getCode()
@@ -45,5 +44,5 @@ const authenticate = async () => {
 }
 
 authenticate().then(token => {
-  console.log(`Your ${chalk.blue("token")} is: ${chalk.green(token)}\n${chalk.red("Do not share it with anyone and keep it safe! It provides full access to your account!")}`)
+  console.log(`Your token is: ${token}\nDo not share it with anyone and keep it safe! It provides full access to your account!`)
 })
