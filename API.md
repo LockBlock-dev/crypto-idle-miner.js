@@ -64,6 +64,9 @@
 <dt><a href="#updateUserInstallation">updateUserInstallation(appVersion, deviceId, deviceToken, deviceType)</a> ⇒ <code>Promise</code></dt>
 <dd><p>Update user installtion on the server.</p>
 </dd>
+<dt><a href="#withdraw">withdraw(address, amount)</a> ⇒ <code>Promise</code></dt>
+<dd><p>Ask for a withdraw of your HORA tokens.</p>
+</dd>
 </dl>
 
 ---
@@ -336,4 +339,22 @@ Update user installtion on the server.
 **Example**  
 ```js
 updateUserInstallation("1.6.10", "5112096s844v9q37qu81t0620q0u923v", "", "Android OS 11")
+```
+
+<a name="withdraw"></a>
+
+## withdraw(address, amount) ⇒ <code>Promise</code>
+Ask for a withdraw of your HORA tokens.
+
+**Kind**: method  
+**Returns**: <code>Promise</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| address | <code>String</code> | TRON wallet address |
+| amount | <code>Number</code> | amount of HORA
+
+**Example**  
+```js
+withdraw("TNjt5fShPVJ4YpsLuU4THuBbg58g2bZoLk", 10000)
 ```

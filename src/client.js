@@ -248,6 +248,17 @@ exports.Client = class Client {
     }
 
     /**
+    * Ask for a withdraw of your HORA tokens.
+    * @param  {String} address - TRON wallet address
+    * @param  {Number} amount - amount of HORA
+    * @example withdraw("TNjt5fShPVJ4YpsLuU4THuBbg58g2bZoLk", 10000)
+    * @return {Promise} promise
+    */
+    withdraw(address, amount) {
+      return this.#request("POST", "users/withdraw", {"address":address, "amount":amount, "method": "web3"})
+    }
+
+    /**
     * Update user installtion on the server.
     * @param  {String} appVersion - game version
     * @param  {String} deviceId - device id
