@@ -48,7 +48,6 @@ exports.Client = class Client {
           "Content-Type": "application/json",
           "Installation": "6081b48e3c12496873c2f003",
           "Authorization": `${this.token}`,
-          "Accept-Encoding": "UTF8",
           "X-Unity-Version": "2020.1.15f1"
         }
       }
